@@ -1,0 +1,26 @@
+.menu-drop-down {
+  min-width: 200px;
+  padding: 0 8px;
+  background-color: #5200d9;
+
+  &:first-child {
+    border-radius: 5px 5px 0 0;
+  }
+
+  &:last-child {
+    border-radius: 0 0 5px 5px;
+  }
+
+  & > a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 0.5px solid #fff;
+    font-size: 14px;
+    text-align: left;
+    color: #fff;
+  }
+
+  &:last-child > a {
+    border-bottom: none;
+  }
+}
