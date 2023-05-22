@@ -32,7 +32,7 @@
     grid-row-gap: 0px;
   }
 
-  &__input {
+  &__block {
     position: relative;
     padding: 25px 40px;
     font-size: 18px;
@@ -75,6 +75,9 @@
       top: 90px;
       left: 0;
       width: 100%;
+    }
+    &--svg--rotate > svg {
+      transform: rotate(180deg);
     }
   }
 

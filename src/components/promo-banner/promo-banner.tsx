@@ -15,7 +15,7 @@ const PromoBanner = () => {
       <form action="" className="search-form">
         <div className="search-form__wrapper">
           <input
-            className="search-form__text search-form__input"
+            className="search-form__text search-form__block"
             type="text"
             placeholder="Куда едем?"
             minLength={3}
@@ -27,7 +27,9 @@ const PromoBanner = () => {
 
           <div className="search-form__count-wrapper">
             <div
-              className="search-form__count search-form__input"
+              className={`search-form__count search-form__block ${
+                showDropdown && 'search-form__count--svg--rotate'
+              }`}
               onClick={() => setShowDropdown(!showDropdown)}
             >
               <span>1 человек</span>
