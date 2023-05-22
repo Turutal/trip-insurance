@@ -1,24 +1,24 @@
 .react-date-picker {
   display: block !important;
   border: none;
+
   &__wrapper {
     flex-direction: row-reverse;
     padding: 26px 40px !important;
     border: none !important;
-
     background-color: #fff !important;
   }
 
   &__calendar-button {
     &::after {
-      content: '';
       position: absolute;
-      left: 0;
       top: 50%;
+      left: 0;
       transform: translateY(-50%);
       width: 1px;
       height: 48px;
       background-color: #5200d9;
+      content: '';
     }
   }
 }

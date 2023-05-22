@@ -8,19 +8,33 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
+    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "outDir": "build",
+    "paths": {
+      "@api/*": ["api/*"],
+      "@components/*": ["components/*"],
+      "@components": ["components/index.ts"],
+      "@store/*": ["store/*"],
+      "@plugins/*": ["plugins/*"],
+      "@tools/*": ["tools/*"],
+      "@constants/*": ["constants/*"],
+      "@my-types/*": ["types/*"],
+    }
   },
   "include": [
-    "src"
-  ]
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["node_modules", "build"]
 }
+

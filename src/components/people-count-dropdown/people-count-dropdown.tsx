@@ -40,7 +40,7 @@ const PeopleCountDropdown: React.FC = () => {
     <div className="people-count-dropdown">
       {dropdownList.map((item) => (
         <div className="people-count-dropdown__wrapper" key={item.id}>
-          <div className="people-count-dropdown__wrapper-text">
+          <div>
             <span className="people-count-dropdown__title">{item.title}</span>
             <span className="people-count-dropdown__subtitle">
               {item.subtitle}
@@ -49,8 +49,8 @@ const PeopleCountDropdown: React.FC = () => {
           <div className="people-count-dropdown__counter">
             <button>
               <Icons.Minus />
-            </button>{' '}
-            <span className="people-count-dropdown__count">{item.count}</span>{' '}
+            </button>
+            <span className="people-count-dropdown__count">{item.count}</span>
             <button>
               <Icons.Plus />
             </button>

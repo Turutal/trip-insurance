@@ -1,17 +1,19 @@
 .container {
-  max-width: 1240px;
   margin: 0 auto;
+  max-width: 1240px;
 }
 
 .header {
   padding-top: 8px;
   font-size: 14px;
   color: #fff;
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
+
   &-menu {
     flex: 1;
     display: flex;
@@ -30,6 +32,7 @@
     & > svg {
       margin-left: 4px;
     }
+
     &--svg--rotate > svg {
       transform: rotate(180deg);
     }
@@ -47,6 +50,7 @@
     border: 1px solid #fff;
     font-size: 14px;
     color: #fff;
+
     & > span {
       margin-left: 8px;
     }

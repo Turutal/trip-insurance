@@ -12,6 +12,7 @@ const PromoBanner = () => {
       <h2 className="promo-banner__subtitle">
         Полис, который действительно работает
       </h2>
+
       <form action="" className="search-form">
         <div className="search-form__wrapper">
           <input
@@ -23,6 +24,7 @@ const PromoBanner = () => {
           />
 
           <DatePicker value={startDate} setValue={setStartDate} />
+
           <DatePicker value={endDate} setValue={setEndDate} />
 
           <div className="search-form__count-wrapper">
@@ -35,6 +37,7 @@ const PromoBanner = () => {
               <span>1 человек</span>
               <Icons.Arrow color="#5200D9" />
             </div>
+
             {showDropdown && (
               <div className="search-form__count-dropdown">
                 <PeopleCountDropdown />
@@ -42,6 +45,7 @@ const PromoBanner = () => {
             )}
           </div>
         </div>
+
         <button className="search-form__submit">Узнать стоимость</button>
       </form>
     </section>

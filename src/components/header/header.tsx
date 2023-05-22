@@ -53,6 +53,7 @@ const Header = () => {
             Партнерам
           </a>
         </nav>
+
         <button className="header__subscribe-button">
           <Icons.Mail />
           <span>Скидки</span>
